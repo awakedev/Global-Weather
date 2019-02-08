@@ -18,12 +18,15 @@ namespace GlobalWeather
         private struct IISConfigurationData
         {
             public IntPtr pNativeApplication;
+
             [System.Runtime.InteropServices.MarshalAs
                     (System.Runtime.InteropServices.UnmanagedType.BStr)]
             public string pwzFullApplicationPath;
+
             [System.Runtime.InteropServices.MarshalAs
                     (System.Runtime.InteropServices.UnmanagedType.BStr)]
             public string pwzVirtualApplicationPath;
+
             public bool fWindowsAuthEnabled;
             public bool fBasicAuthEnabled;
             public bool fAnonymousAuthEnable;
